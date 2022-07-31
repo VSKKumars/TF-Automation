@@ -22,7 +22,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
+                        dir("TF-Automation")
                         {
                             git "https://github.com/VSKKumars/TF-Automation.git"
                         }
