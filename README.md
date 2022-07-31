@@ -8,7 +8,7 @@ A Terraform module for creating AWS EC2 instance.
 
 ```hcl
 module "ec2_instance" {
-  source     = "git::https://github.com/VSKKumars/TF-Automation/tree/individual"
+  source     = "git::https://github.com/easyawslearn/Terraform-Tutorial.git//aws-instance-first-script""
 
   region    = "us-west-2"
 }
