@@ -24,7 +24,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/easyawslearn/Terraform-Tutorial.git"
+                            git "https://github.com/VSKKumars/TF-Automation.git"
                         }
                     }
                 }
@@ -48,7 +48,7 @@ pipeline {
 
            steps {
                script {
-                    def plan = readFile 'terraform/aws-instance-first-script/tfplan.txt'
+                    def plan = readFile 'TF-Automation/aws-instance-example.tf/tfplan.txt'
                     input message: "Do you want to apply the plan?",
                     parameters: [text(name: 'Plan', description: 'Please review the plan', defaultValue: plan)]
                }
